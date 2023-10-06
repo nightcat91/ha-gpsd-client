@@ -1,11 +1,20 @@
 {
   "domain": "gpsd_client",
   "name": "GPSD Client",
-  "documentation": "https://github.com/Djelibeybi/hass_gpsd",
-  "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/Djelibeybi/hass_gpsd/issues",
-  "version": "0.0.1",
+  "codeowners": [
+    "@zorrobyte"
+  ],
   "config_flow": false,
-  "codeowners": "@Djelibeybi",
-  "requirements": ["gpsdclient==1.2.0"]
+  "dependencies": [],
+  "documentation": "https://github.com/zorrobyte/ha-gpsd-client",
+  "homekit": {},
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/zorrobyte/ha-gpsd-client/issues",
+  "requirements": [
+    "gpsdclient==1.2.0"
+  ],
+  "ssdp": [],
+  "version": "0.0.2",
+  "zeroconf": []
 }
