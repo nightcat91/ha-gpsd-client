@@ -103,8 +103,8 @@ class GpsdClient(SensorEntity):
 
     @property
     def state_class(self) -> str:
-        """This sensor returns instant measurements."""
-        return "measurement"
+        """This sensor returns text measurements."""
+        return "text"
 
     @property
     def icon(self) -> str:
@@ -152,4 +152,4 @@ class GpsdClient(SensorEntity):
             return "3D Fix"
         if self.mode == 2:
             return "2D Fix"
-        return None
+        return "Unknown Mode"
