@@ -97,14 +97,19 @@ class GpsdClient(SensorEntity):
         return self._name
 
     @property
-    def native_value(self) -> str:
-        """Return the state of GPSD."""
-        return self.mode_str()
+    def native_value(self) -> int:
+        """Return the state of GPSD as a numeric value."""
+        if self.mode_str() == '3D Fix':
+            return 3
+        elif self.mode_str() == '2D Fix':
+            return 2
+        else:
+            return 0
 
     @property
     def state_class(self) -> str:
-        """This sensor returns text measurements."""
-        return "text"
+        """This sensor returns instant measurements."""
+        return "measurement"
 
     @property
     def icon(self) -> str:
