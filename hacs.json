@@ -1,8 +1,8 @@
 {
     "name": "GPSD Client",
     "render_readme": false,
-    "homeassistant": "2023.9.1",
-    "hacs": "1.28.4"
+    "homeassistant": "2025.2.2",
+    "hacs": "2.0.5"
     "domains": [
         "sensor"
     ],
