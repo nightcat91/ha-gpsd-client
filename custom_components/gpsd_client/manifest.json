@@ -2,15 +2,15 @@
   "domain": "gpsd_client",
   "name": "GPSD Client",
   "codeowners": [
-    "@zorrobyte"
+    "@nightcat91"
   ],
   "config_flow": false,
   "dependencies": [],
-  "documentation": "https://github.com/zorrobyte/ha-gpsd-client",
+  "documentation": "https://github.com/nightcat91/ha-gpsd-client",
   "homekit": {},
   "integration_type": "hub",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/zorrobyte/ha-gpsd-client/issues",
+  "issue_tracker": "https://github.com/nightcat91/ha-gpsd-client/issues",
   "requirements": [
     "gpsdclient==1.2.0"
   ],
