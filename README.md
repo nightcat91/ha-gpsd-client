@@ -5,9 +5,10 @@ and time data from an external `gpsd` instance.
 
 ## Installation
 
-1. Add <https://github.com/Djelibeybi/ha-gpsd-client> as a custom `integration`
+1. Add <https://github.com/nightcat91/ha-gpsd-client> as a custom `integration`
    repository in [HACS][HACS].
-2. Add at least the following to `configuration.yaml` :
+2. Search in HACS for GPSD and install the GPSD Client and reboot Home Assistant afterwards
+3. Add at least the following to `configuration.yaml` :
 
 ```yaml
 sensor:
